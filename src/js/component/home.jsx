@@ -31,14 +31,15 @@ const Home = () => {
 
       </div >
 
-      <div className=" mt-3">
+      <div className="con3 mt-3">
       <ul >
           {
-            tasks.map((item,index) => <li className="list"  key={index}>{index+1} .    {item} <button onClick={()=> delateTask(item)}>X</button></li>)
+            tasks.map((item,index) => <li className="list"  key={index}>{index+1} .    {item} <button class="btn-close text-danger bg-danger"  onClick={()=> delateTask(item)}></button></li>)
           }     
       </ul>
       </div>
-      <p className="footer">Tienes <span className="pendientes">{tasks.length}</span> tareas pendientes.    </p>
+      <p className="footer mt-3">{tasks.length===0 ? 'No tienes  tareas pendientes' : <span className="pendientes">Tienes  {tasks.length} tareas pendientes. </span>}</p> 
+     
     </div>
   );
 };

@@ -14,6 +14,7 @@
     width: 300px;
     background-color: rgb(254, 216, 161);
     border:1px solid rgb(154, 154, 154);
+    box-shadow:  4px 4px 4px 4px;
 }
 body{
     margin-top: 100px;
@@ -45,14 +46,11 @@ span{
 button{
     border-radius: 100%;
     background-color: rgb(255, 255, 255);
-    color: red;
-}
-.list{
+  }
+
+.list {
     display: flex;
     justify-content: space-between;
     padding: 4px 6px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-  
-   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
 }
